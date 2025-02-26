@@ -1,6 +1,9 @@
 {
   "dependencies": {
+    "@mantine/carousel": "^7.17.0",
     "@tabler/icons": "^3.30.0",
-    "@tabler/icons-react": "^3.30.0"
+    "@tabler/icons-react": "^3.30.0",
+    "embla-carousel-react": "^6.0.0",
+    "react-fast-marquee": "^1.6.5"
   }
 }

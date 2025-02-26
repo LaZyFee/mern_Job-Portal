@@ -29,4 +29,4 @@ export const theme = createTheme({
             "#461902"
         ]
     }
-});
+})
