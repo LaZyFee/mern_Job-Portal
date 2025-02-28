@@ -1,5 +1,4 @@
 import { Companies } from "./Companies"
-import { Footer } from "./Footer"
 import { HeroSection } from "./HeroSection"
 import { JobCategory } from "./JobCategory"
 import { Subscribe } from "./Subscribe"
@@ -15,7 +14,6 @@ export const Home = () => {
             <Working />
             <Testimonials />
             <Subscribe />
-            <Footer />
         </div>
     )
 }

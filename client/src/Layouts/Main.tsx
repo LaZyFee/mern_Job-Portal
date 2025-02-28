@@ -1,11 +1,15 @@
 import { Outlet } from "react-router-dom"
 import { Header } from "../Components/Header/Header"
+import { Footer } from "../Components/Footer/Footer"
 
 export const Main = () => {
     return (
-        <div className="min-h-screen bg-mine-shaft-950">
+        <div className="bg-mine-shaft-950">
             <Header />
-            <Outlet />
+            <div className="min-h-screen">
+                <Outlet />
+            </div>
+            <Footer />
         </div>
     )
 }

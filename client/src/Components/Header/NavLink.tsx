@@ -30,7 +30,7 @@ export const NavLinks = () => {
             {
                 Links.map((link, index) =>
                     <div
-                        className={`${location.pathname === link.path ? "border-bright-sun-400 text-bright-sun-400" : " border-transparent"} h-full border-t-[3px] flex items-center`}
+                        className={`${location.pathname === link.path ? "border-bright-sun-400 text-bright-sun-400" : " border-transparent"} h-full border-b-[3px] flex items-center`}
                     >
                         <Link key={index} to={link.path}>{link.name}</Link>
 

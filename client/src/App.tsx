@@ -7,7 +7,7 @@ import { theme } from "./utils/Theme";
 
 function App() {
   return (
-    <MantineProvider theme={theme}>
+    <MantineProvider defaultColorScheme="dark" theme={theme}>
       <RouterProvider router={router} />
     </MantineProvider>
   )
