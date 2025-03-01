@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Checkbox, Combobox, Group, Input, Pill, PillsInput, useCombobox } from '@mantine/core';
-import { IconSearch } from '@tabler/icons-react';
 
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const MultiSelectCreatable = (props: any) => {
 
 
