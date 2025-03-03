@@ -3,6 +3,7 @@ import { Main } from "../Layouts/Main";
 import { Home } from "../Pages/HomePage/Home";
 import { FindJobs } from "../Pages/Find Jobs/FindJobs";
 import { FindTalent } from "../Pages/Find Talent/FindTalent";
+import { TalentProfile } from "../Pages/Talent Profile/TalentProfile";
 
 
 
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
             {
                 path: "/find-talent",
                 element: <FindTalent />
+            },
+            {
+                path: "/talent-profile",
+                element: <TalentProfile />
             }
         ]
     }
