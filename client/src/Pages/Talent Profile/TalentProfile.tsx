@@ -1,17 +1,21 @@
-import { Divider } from "@mantine/core"
-
-
-
+import { Button, Divider } from "@mantine/core"
+import { IconArrowLeft } from "@tabler/icons-react"
+import { Link } from "react-router-dom"
+import { Profile } from "./Profile"
 
 
 export const TalentProfile = () => {
 
-
-
-
     return (
-        <div>
+        <div className="p-4 font-['poppins']">
             <Divider size={"lg"} />
-            TalentProfile</div>
+            <Link className="my-4 inline-block" to="/find-talent">
+                <Button leftSection={<IconArrowLeft size={20} />} variant="light" color="brightSun.4">
+                    Back </Button>
+            </Link>
+            <div className="flex gap-5">
+                <Profile />
+            </div>
+        </div>
     )
 }
