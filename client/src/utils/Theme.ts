@@ -1,6 +1,10 @@
 import { createTheme } from "@mantine/core";
 
 export const theme = createTheme({
+    focusRing: "never",
+    fontFamily: "poppins, sans-serif",
+    primaryColor: "brightSun",
+    primaryShade: 4,
     colors: {
         mineShaft: [
             "#f6f6f6",

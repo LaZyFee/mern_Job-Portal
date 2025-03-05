@@ -2,6 +2,8 @@ import { Button, Divider } from "@mantine/core"
 import { IconArrowLeft } from "@tabler/icons-react"
 import { Link } from "react-router-dom"
 import { Profile } from "./Profile"
+import { profile } from "../../assets/Data/TalentData"
+import { RecommendedTalent } from "./RecommendedTalent"
 
 
 export const TalentProfile = () => {
@@ -14,7 +16,8 @@ export const TalentProfile = () => {
                     Back </Button>
             </Link>
             <div className="flex gap-5">
-                <Profile />
+                <Profile {...profile} />
+                <RecommendedTalent />
             </div>
         </div>
     )
