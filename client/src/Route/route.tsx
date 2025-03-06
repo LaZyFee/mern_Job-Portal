@@ -4,7 +4,7 @@ import { Home } from "../Pages/HomePage/Home";
 import { FindJobs } from "../Pages/Find Jobs/FindJobs";
 import { FindTalent } from "../Pages/Find Talent/FindTalent";
 import { TalentProfile } from "../Pages/Talent Profile/TalentProfile";
-import { PostJob } from "../Pages/Post Job/PostJob";
+import { PostJobPage } from "../Pages/Post Job/PostJobPage";
 
 
 
@@ -31,7 +31,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/upload-job",
-                element: <PostJob />
+                element: <PostJobPage />
             },
             {
                 path: "/about-us",
