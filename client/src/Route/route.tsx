@@ -5,6 +5,7 @@ import { FindJobs } from "../Pages/Find Jobs/FindJobs";
 import { FindTalent } from "../Pages/Find Talent/FindTalent";
 import { TalentProfile } from "../Pages/Talent Profile/TalentProfile";
 import { PostJobPage } from "../Pages/Post Job/PostJobPage";
+import { JobDescPage } from "../Pages/Post Job/JobDescPage";
 
 
 
@@ -36,6 +37,10 @@ export const router = createBrowserRouter([
             {
                 path: "/about-us",
                 element: <div>About Us</div>
+            },
+            {
+                path: "/job-desc",
+                element: <JobDescPage />
             }
         ]
     }

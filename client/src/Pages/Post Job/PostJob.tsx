@@ -1,4 +1,4 @@
-import { TagsInput } from "@mantine/core";
+import { Button, TagsInput } from "@mantine/core";
 import { fields } from "../../assets/Data/PostJob"
 import { SelectInput } from "./SelectInput";
 import { TextEditor } from "./RichTextEditor";
@@ -24,9 +24,13 @@ export const PostJob = () => {
                     <SelectInput {...select[5]} />
                 </div>
                 <TagsInput label="Skills" placeholder="Enter Skills" clearable acceptValueOnBlur splitChars={[',', ' ', '|']} withAsterisk />
-                <div>
+                <div className="[&_button[data-active='true']]:!bg-bright-sun-400/20 [&_button[data-active='true']]:!text-bright-sun-400">
                     <h6 className="text-sm font-medium">Job Description</h6>
                     <TextEditor />
+                </div>
+                <div className="flex gap-3 justify-end">
+                    <Button color="brightSun.4" variant="outline">Save as Draft</Button>
+                    <Button color="brightSun.4" variant="light">Post Job</Button>
                 </div>
             </div>
         </div>
