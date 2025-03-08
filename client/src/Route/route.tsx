@@ -5,7 +5,8 @@ import { FindJobs } from "../Pages/Find Jobs/FindJobs";
 import { FindTalent } from "../Pages/Find Talent/FindTalent";
 import { TalentProfile } from "../Pages/Talent Profile/TalentProfile";
 import { PostJobPage } from "../Pages/Post Job/PostJobPage";
-import { JobDescPage } from "../Pages/Post Job/JobDescPage";
+import { JobDescPage } from "../Pages/Job Description/JobDescPage";
+import { ApplyJobPage } from "../Pages/Apply Job/ApplyJobPage";
 
 
 
@@ -41,6 +42,10 @@ export const router = createBrowserRouter([
             {
                 path: "/job-desc",
                 element: <JobDescPage />
+            },
+            {
+                path: "/apply-job",
+                element: <ApplyJobPage />
             }
         ]
     }

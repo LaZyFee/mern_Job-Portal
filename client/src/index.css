@@ -1,4 +1,19 @@
 @import "tailwindcss";
+@layer base {
+  ul,
+  ol {
+    list-style: revert;
+    font-size: medium;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+  }
+  p {
+    font-size: medium;
+  }
+}
 
 @theme {
   --text-font: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
