@@ -24,7 +24,7 @@ export const JobDescription = () => {
                     </div>
                 </div>
                 <div className="flex items-center flex-col gap-2">
-                    <Link to="">
+                    <Link to="/apply-job">
                         <Button color="brightSun.4" variant="light" size="sm">Apply Now</Button>
                     </Link>
                     <IconBookmark className="text-mine-shaft-400 cursor-pointer transition-colors duration-200 hover:text-bright-sun-400" />
