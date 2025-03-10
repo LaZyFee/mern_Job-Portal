@@ -2,10 +2,7 @@ import { Button, Divider } from "@mantine/core"
 import { IconArrowLeft } from "@tabler/icons-react"
 import { useNavigate } from "react-router-dom"
 import { Company } from "./Company"
-
-
-
-
+import { SimilarComapnies } from "./SimilarComapnies"
 
 
 export const CompanyProfilePage = () => {
@@ -23,7 +20,10 @@ export const CompanyProfilePage = () => {
             >
                 Back
             </Button>
-            <Company />
+            <div className="flex justify-around gap-5">
+                <Company />
+                <SimilarComapnies />
+            </div>
         </div>
     )
 }

@@ -1,6 +1,9 @@
 import { Avatar, Divider, Tabs } from "@mantine/core"
 import { IconMapPin } from "@tabler/icons-react"
 import BannerImage from "/assets/Profile/banner.jpg"
+import { AboutCompany } from "./AboutCompany"
+import { CompanyJob } from "./CompanyJob"
+import { CompanyEmployees } from "./CompanyEmployees"
 export const Company = () => {
     return (
         <div className="w-3/4">
@@ -30,9 +33,9 @@ export const Company = () => {
                         <Tabs.Tab value="jobs">Jobs</Tabs.Tab>
                         <Tabs.Tab value="employee">Employees</Tabs.Tab>
                     </Tabs.List>
-                    <Tabs.Panel value="about">First tab content</Tabs.Panel>
-                    <Tabs.Panel value="jobs">Second tab content</Tabs.Panel>
-                    <Tabs.Panel value="employee">Third tab content</Tabs.Panel>
+                    <Tabs.Panel value="about"><AboutCompany /></Tabs.Panel>
+                    <Tabs.Panel value="jobs"><CompanyJob /></Tabs.Panel>
+                    <Tabs.Panel value="employee"><CompanyEmployees /></Tabs.Panel>
                 </Tabs>
             </div>
         </div>

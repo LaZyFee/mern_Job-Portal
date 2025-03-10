@@ -8,6 +8,7 @@ import { PostJobPage } from "../Pages/Post Job/PostJobPage";
 import { JobDescPage } from "../Pages/Job Description/JobDescPage";
 import { ApplyJobPage } from "../Pages/Apply Job/ApplyJobPage";
 import { CompanyProfilePage } from "../Pages/Company Profile/CompanyProfilePage";
+import { PostedJobPage } from "../Pages/Posted Job/PostedJobPage";
 
 
 export const router = createBrowserRouter([
@@ -50,6 +51,10 @@ export const router = createBrowserRouter([
             {
                 path: "/company",
                 element: <CompanyProfilePage />
+            },
+            {
+                path: "/posted-job",
+                element: <PostedJobPage />
             }
         ]
     }

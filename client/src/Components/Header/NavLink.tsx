@@ -17,8 +17,8 @@ export const NavLinks = () => {
             path: "/upload-job"
         },
         {
-            name: "About Us",
-            path: "/about-us"
+            name: "Posted Jobs",
+            path: "/posted-job"
         }
     ]
 
