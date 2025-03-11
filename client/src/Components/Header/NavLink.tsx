@@ -19,6 +19,10 @@ export const NavLinks = () => {
         {
             name: "Posted Jobs",
             path: "/posted-job"
+        },
+        {
+            name: "Job Hitory",
+            path: "/job-history"
         }
     ]
 

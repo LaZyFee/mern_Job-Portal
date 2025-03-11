@@ -5,7 +5,8 @@ import { ActionIcon } from '@mantine/core';
 import { card, desc, skills } from "../../assets/Data/JobDescData";
 import DOMPurify from 'dompurify';
 
-export const JobDescription = () => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const JobDescription = (props: any) => {
     const data = DOMPurify.sanitize(desc);
 
 
@@ -25,9 +26,12 @@ export const JobDescription = () => {
                 </div>
                 <div className="flex items-center flex-col gap-2">
                     <Link to="/apply-job">
-                        <Button color="brightSun.4" variant="light" size="sm">Apply Now</Button>
+                        <Button color="brightSun.4" variant="light" size="sm">{props.edit ? "Edit" : "Apply Now"}</Button>
                     </Link>
-                    <IconBookmark className="text-mine-shaft-400 cursor-pointer transition-colors duration-200 hover:text-bright-sun-400" />
+                    {
+                        props.edit ? <Button color="red.4" variant="light" size="sm">Delete</Button> : <IconBookmark className="text-mine-shaft-400 cursor-pointer transition-colors duration-200 hover:text-bright-sun-400" />
+                    }
+
                 </div>
             </div>
             <Divider my="xl" />
