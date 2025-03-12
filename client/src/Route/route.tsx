@@ -10,6 +10,8 @@ import { ApplyJobPage } from "../Pages/Apply Job/ApplyJobPage";
 import { CompanyProfilePage } from "../Pages/Company Profile/CompanyProfilePage";
 import { PostedJobPage } from "../Pages/Posted Job/PostedJobPage";
 import { JobHistoryPage } from "../Pages/Job History/JobHistoryPage";
+import { AuthenticationPage } from "../Pages/Authentication/AuthenticationPage";
+import { UserProfilePage } from "../Pages/UserProfile/UserProfilePage";
 
 
 export const router = createBrowserRouter([
@@ -60,7 +62,20 @@ export const router = createBrowserRouter([
             {
                 path: "/job-history",
                 element: <JobHistoryPage />
-            }
+            },
+            {
+                path: "/profile",
+                element: < UserProfilePage />
+            },
+
         ]
+    },
+    {
+        path: "/signup",
+        element: <AuthenticationPage />
+    },
+    {
+        path: "/login",
+        element: <AuthenticationPage />
     }
 ])
