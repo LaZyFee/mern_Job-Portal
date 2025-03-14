@@ -1,4 +1,4 @@
-import { ActionIcon, Divider } from "@mantine/core"
+import { ActionIcon, Divider, Textarea } from "@mantine/core"
 import BannerImage from "/assets/Profile/banner.jpg"
 import AvatarImage from "/assets/avatar.png"
 import { IconBriefcase, IconDeviceFloppy, IconMapPin, IconPencil } from "@tabler/icons-react"
@@ -11,6 +11,7 @@ import fields from "../../assets/Data/Profile"
 export const UserProfile = (props: any) => {
     const select = fields;
     const [edit, setEdit] = useState([false, false, false, false, false,])
+    const [about, setAbout] = useState<string>(props.about);
 
     const handleEdit = (index: number) => {
         const newEdit = [...edit];
@@ -61,8 +62,15 @@ export const UserProfile = (props: any) => {
                         {edit[1] ? <IconDeviceFloppy className="w-4/5 h-4/5" stroke={1.5} /> : <IconPencil className="w-4/5 h-4/5" stroke={1.5} />}
                     </ActionIcon>
                 </div>
-                <div className="text-sm text-justify text-mine-shaft-300">{props.about}</div>
+                {
+                    edit[1] ? <Textarea value={about} onChange={(event) => setAbout(event.currentTarget.value)} placeholder="Write about yourself" autosize minRows={3} />
+                        : <div className="text-sm text-justify text-mine-shaft-300">{props.about}</div>
+                }
+
+
+
             </div>
+
             <Divider my="md" />
             <div className="p-3">
                 <div className="text-2xl font-semibold mb-3 flex justify-between">Skills
